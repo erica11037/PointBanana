@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+ 
+    --cor-primaria: #7456CE;
+    --cor-secundaria: #3e306b;
+    --cor-destaque: #8D7ABE;
+    --branco: #D9DCFF;
+    --cor-divisoria: #72669A;
+    --cor-fundo: #0e0e0e;
+    --cor-hover: #9999b8;
+
+    --fonte-primaria: "poppins", sans-serif;
+
+    
+}
+
+
+body{
+    background-color: var(--cor-fundo);
+    
+}
+
+.homepage__banners{
+    position: relative;  
+    width: 100%;         
+    height:800px;       
+    overflow: hidden;    
+}
+
+.slideshow__container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Esconde os radio buttons (eles ficam invisíveis) */
+input[type="radio"] {
+    display: none;
+}
+
+.banner1, .banner2, .banner3, .banner4, .banner5 {
+    position: absolute;        
+    width: 100%;              
+    height: 100%;             
+
+}
+
+.imagem__banner{
+    position: absolute;
+    inset: 0; /* isso é para q top, left, right e bottom fiquem todos 0 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0; /* pra fica atrás da logo */
+    opacity: 0;
+    transition: opacity 0.8s; 
+    
+
+}
+
+.banner1 .imagem__banner{
+    background-position: center 40%;
+}
+
+.banner2 .imagem__banner{
+    background-position: center 50%;
+}
+
+.banner3 .imagem__banner{
+    background-position: center 30%;
+}
+
+.banner4 .imagem__banner{
+    background-position: center 10%;
+}
+
+.banner5 .imagem__banner{
+    background-position: center 10%;
+}
+
+
+/*mostra o slide ativo*/
+
+#slide1:checked ~ #conteudo__slide1 {
+    opacity: 1;  /* fica visível */
+}
+#slide2:checked ~ #conteudo__slide2 {
+    opacity: 1;
+}
+#slide3:checked ~ #conteudo__slide3 {
+    opacity: 1;
+}
+#slide4:checked ~ #conteudo__slide4 {
+    opacity: 1;
+}
+#slide5:checked ~ #conteudo__slide5 {
+    opacity: 1;
+}
+
+/*gradiente do banner*/
+
+.logo__banners{
+    position: absolute;
+    left: 5rem;
+    bottom: 10rem;
+    width: min(30rem, 80vw); /* a logo tem no máximo 30rem, mas se a tela for menor que isso, ela vai ter 80% da largura da tela */
+    z-index: 5;
+}
+
+
+
+.slideshow__container::after {
+    /* O ::after é como se fosse um "filho" do slide, mas sem precisar adicionar mais HTML. */
+    content: '';
+    /*o content:'' é necessário para o ::after funcionar, e precisa estar vazio pq não queremos adicionar texto */
+    position: absolute;   
+    inset: 0;                        
+    background: linear-gradient(to bottom, transparent, rgba(17, 17, 17, 0.8), rgb(17, 17, 17));                              
+    z-index: 2;
+    pointer-events: none; /* isso faz com que o gradiente não bloqueie os cliques nos botões */              
+}
+
+
+.banners__controles {
+    position: absolute;           /* posicionar dentro do slideshow */
+    bottom: 20px;                 
+    left: 50%;                    
+    transform: translateX(-50%);  /* centralizar os botões */
+    display: flex;                
+    gap: 10px;                    
+    z-index: 10;                  
+}
+
+.botoes__slides {
+    
+    width: 3rem;                  
+    height: 1rem;                 
+    border-radius: 10%;           
+    background-color: rgba(110, 70, 143, 0.5);  
+    cursor: pointer;              
+    transition: background-color 0.3s;  
+}
+
+
+/* Ao passar o mouse, fica mais visível */
+.botoes__slides:hover {
+    background-color: rgba(132, 104, 139, 0.8);
+}
+
+
+.nav__cabecalho {
+    position: absolute;           
+    top: 20px;                    
+    left: 20px;                   
+    z-index: 20;                 
+}
+
+
+
+
+
+.slider{
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    
+}
+.slides{
+    display: flex;
+}
+
+/*---------------------------------------------------------------*/
+
+.menu__cabecalho{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    list-style: none;
+}
+
+
+.nav__cabecalho{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px 40px;
+    z-index: 20;
+}
+
+.menu__cabecalho a{
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}

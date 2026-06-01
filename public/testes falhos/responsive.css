@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+ 
+    --cor-primaria: #7456CE;
+    --cor-secundaria: #3e306b;
+    --cor-destaque: #8D7ABE;
+    --branco: #D9DCFF;
+    --cor-divisoria: #72669A;
+    --cor-fundo: #0e0e0e;
+    --cor-hover: #9999b8;
+    --cor-header: #20202025;
+    --cor-menu: #161317;
+
+    --fonte-primaria: "poppins", sans-serif;
+
+    
+}
+
+@media screen and (max-width: 768px){
+    .botao__menu{
+        display: block;
+    }
+    .cabecalho__nav{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color:var(--cor-menu);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+
+    @keyframes mostrarMenu{
+        from {margin-left: -100vw;}
+        to {margin-left: -10vw;}
+    }
+}

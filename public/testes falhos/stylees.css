@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+ 
+    --cor-primaria: #7456CE;
+    --cor-secundaria: #3e306b;
+    --cor-destaque: #8D7ABE;
+    --branco: #D9DCFF;
+    --cor-divisoria: #72669A;
+    --cor-fundo: #121212;
+    --cor-hover: #9999b8;
+
+    --fonte-primaria: "poppins", sans-serif;
+
+    
+}
+
+
+body{
+    background-color: var(--cor-fundo);
+    
+}
+
+/* ============================================ */
+/* HEADER PRINCIPAL */
+/* ============================================ */
+
+.homepage__banners{
+    position: relative;  /* permite posicionar elementos dentro dele */
+    width: 100%;         /* ocupar toda a largura */
+    height: 600px;       /* altura de 600px */
+    overflow: hidden;    /* esconde o que sair da caixa */
+}
+
+/* ============================================ */
+/* SLIDESHOW - CONTAINER */
+/* ============================================ */
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Esconde os radio buttons (eles ficam invisíveis) */
+input[type="radio"] {
+    display: none;
+}
+
+/* ============================================ */
+/* CADA SLIDE (IMAGEM) */
+/* ============================================ */
+
+.slide1 {
+    position: absolute;        /* fica em cima um do outro */
+    width: 100%;              /* ocupar 100% da largura */
+    height: 100%;             /* ocupar 100% da altura */
+    background-size: cover;   /* a imagem cobre tudo */
+    background-position: center 40%;  /* centralizar a imagem, um pouco mais pra cima */
+    background-repeat: no-repeat;     /* não repetir a imagem */
+    opacity: 0;               /* começa invisível */
+    transition: opacity 0.8s; /* transição suave ao aparecer/desaparecer */
+}
+.slide2 {
+    position: absolute;        /* fica em cima um do outro */
+    width: 100%;              /* ocupar 100% da largura */
+    height: 100%;             /* ocupar 100% da altura */
+    background-size: cover;   /* a imagem cobre tudo */
+    background-position: center 50%;  /* centralizar a imagem, um pouco mais pra cima */
+    background-repeat: no-repeat;     /* não repetir a imagem */
+    opacity: 0;               /* começa invisível */
+    transition: opacity 0.8s; /* transição suave ao aparecer/desaparecer */
+}
+.slide3 {
+    position: absolute;        /* fica em cima um do outro */
+    width: 100%;              /* ocupar 100% da largura */
+    height: 100%;             /* ocupar 100% da altura */
+    background-size: cover;   /* a imagem cobre tudo */
+    background-position: center 30%;  /* centralizar a imagem, um pouco mais pra cima */
+    background-repeat: no-repeat;     /* não repetir a imagem */
+    opacity: 0;               /* começa invisível */
+    transition: opacity 0.8s; /* transição suave ao aparecer/desaparecer */
+}
+.slide4 {
+    position: absolute;        /* fica em cima um do outro */
+    width: 100%;              /* ocupar 100% da largura */
+    height: 100%;             /* ocupar 100% da altura */
+    background-size: cover;   /* a imagem cobre tudo */
+    background-position: center 10%;  /* centralizar a imagem, um pouco mais pra cima */
+    background-repeat: no-repeat;     /* não repetir a imagem */
+    opacity: 0;               /* começa invisível */
+    transition: opacity 0.8s; /* transição suave ao aparecer/desaparecer */
+}
+.slide5 {
+    position: absolute;        /* fica em cima um do outro */
+    width: 100%;              /* ocupar 100% da largura */
+    height: 100%;             /* ocupar 100% da altura */
+    background-size: cover;   /* a imagem cobre tudo */
+    background-position: center 10%;  /* centralizar a imagem, um pouco mais pra cima */
+    background-repeat: no-repeat;     /* não repetir a imagem */
+    opacity: 0;               /* começa invisível */
+    transition: opacity 0.8s; /* transição suave ao aparecer/desaparecer */
+}
+/* ============================================ */
+/* MOSTRAR O SLIDE ATIVO (a mágica do CSS!) */
+/* ============================================ */
+
+/* Quando o radio1 é selecionado, mostra o slide1 */
+#slide1:checked ~ #slide-content-1 {
+    opacity: 1;  /* fica visível */
+}
+
+/* Quando o radio2 é selecionado, mostra o slide2 */
+#slide2:checked ~ #slide-content-2 {
+    opacity: 1;
+}
+
+/* Quando o radio3 é selecionado, mostra o slide3 */
+#slide3:checked ~ #slide-content-3 {
+    opacity: 1;
+}
+
+/* Quando o radio4 é selecionado, mostra o slide4 */
+#slide4:checked ~ #slide-content-4 {
+    opacity: 1;
+}
+
+/* Quando o radio5 é selecionado, mostra o slide5 */
+#slide5:checked ~ #slide-content-5 {
+    opacity: 1;
+}
+
+/* ============================================ */
+/* GRADIENTE (aquele efeito escuro na parte de baixo) */
+/* ============================================ */
+
+.logo__banners{
+    position: absolute;
+    width: 40rem;
+    height: auto;
+    bottom: 20%;
+    left: 2%;
+    z-index: 2;
+}
+
+
+.slideshow-container::after {
+    /* O pseudo-elemento ::after é como se fosse um "filho" do slide, mas sem precisar adicionar mais HTML. Ele é perfeito para criar camadas extras, como esse gradiente escuro. */
+    content: '';                           /* criar um pseudo-elemento */
+    position: absolute;                 /* posicionar dentro do slide */
+    width: 100%;                           /* ocupar 100% de largura */
+    height: 100%;                        /* ocupar 100% de altura */
+    background: linear-gradient(           /* gradiente: começa transparente e fica escuro */
+        to bottom,                         /* de cima para baixo */
+        transparent,                       /* começa transparente */
+        rgba(17, 17, 17, 0.8),            /* meio fica mais escuro */
+        rgb(17, 17, 17)                   /* fundo fica bem escuro */
+    );
+    top: 30%;                                /* alinhar ao topo */
+    left: 0;                               /* alinhar à esquerda */
+    z-index: 1;                            /* fica por cima da imagem */
+                   /* permite clicar "através" dele */
+}
+
+/* ============================================ */
+/* BOTÕES DE NAVEGAÇÃO */
+/* ============================================ */
+
+.slide-controls {
+    position: absolute;           /* posicionar dentro do slideshow */
+    bottom: 20px;                 /* 20px de distância do fundo */
+    left: 50%;                    /* colocar no meio horizontalmente */
+    transform: translateX(-50%);  /* centralizar os botões */
+    display: flex;                /* colocar os botões em fila */
+    gap: 10px;                    /* espaço entre os botões */
+    z-index: 10;                  /* fica por cima de tudo */
+}
+
+.control-btn {
+    width: 12px;                  /* tamanho do botão */
+    height: 12px;                 /* tamanho do botão */
+    border-radius: 50%;           /* deixar redondo */
+    background-color: rgba(255, 255, 255, 0.5);  /* branco transparente */
+    cursor: pointer;              /* muda o cursor ao passar o mouse */
+    transition: background-color 0.3s;  /* transição suave de cor */
+}
+
+/* Quando o botão está ativo, fica branco sólido */
+#slide1:checked ~ .slide-controls label:nth-child(1),
+#slide2:checked ~ .slide-controls label:nth-child(2),
+#slide3:checked ~ .slide-controls label:nth-child(3),
+#slide4:checked ~ .slide-controls label:nth-child(4),
+#slide5:checked ~ .slide-controls label:nth-child(5) {
+    background-color: white;
+}
+
+/* Ao passar o mouse, fica mais visível */
+.control-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* ============================================ */
+/* NAVEGAÇÃO (logo do site) */
+/* ============================================ */
+
+.nav__cabecalho {
+    position: absolute;           /* fica por cima do slideshow */
+    top: 20px;                    /* 20px do topo */
+    left: 20px;                   /* 20px da esquerda */
+    z-index: 20;                  /* bem acima de tudo */
+}
+
+
+/*
+background: url('../img/banner-chainsaw-man.png') no-repeat center center/cover;
+    background-position: center 38%;
+
+.homepage__banners::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, transparent, rgba(18, 18, 18, 0.8), rgb(18, 18, 18));
+    bottom: 0;
+    z-index: 1;
+}
+    */
+
+
+
+
+.nav__cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.slider{
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    
+}
+.slides{
+    display: flex;
+}

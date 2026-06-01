@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+ 
+    --cor-primaria: #7456CE;
+    --cor-secundaria: #3e306b;
+    --cor-destaque: #8D7ABE;
+    --branco: #D9DCFF;
+    --cor-divisoria: #72669A;
+    --cor-fundo: #0e0e0e;
+    --cor-hover: #9999b8;
+    --cor-menu: #161317;
+    --preto: #121212;
+    --cinza: #6C6A6A;
+
+    --fonte-primaria: "poppins", sans-serif;
+
+    
+}
+
+
+body{
+    background-color: var(--cor-fundo);
+    
+}
+
+.navegacao__container{
+    position: relative;
+    padding: 8px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor-menu);
+}
+
+.perfil__links{
+    display: flex;
+    gap: 1.5rem;
+    padding-right: 20px;
+}
+.perfil__links img{
+    width: 2.5rem;
+}
+
+.logo__homepage img{
+    padding-left:30px;
+    width: 10rem;
+}
+
+.categorias__cabecalho{
+    font-size: 1rem;
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    transform: translateX(-70%);
+}
+.links__categorias{
+    text-decoration: 0;
+    color: var(--cor-hover);
+    transition: 0.4s;
+
+}
+
+.links__categorias:hover{
+    color: var(--branco);
+}
+
+/*--------- barra de pesquisa ---------*/
+.lupa__roxa{
+    display: none; /* faz desaparecer da tela*/
+}
+
+.container__pesquisa{
+    position: absolute;
+    background-color: #48397a;
+    border-radius: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    right: 200px;
+}
+
+.barra__pesquisa{
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    width: 0;
+    transition: 0.4s;
+    color: var(--branco);
+
+}
+
+.botao__pesquisa{
+    
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 10px 50px 50px 10px;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+/*quando o mouse passar no container (hover), a barra de pesquisa vai ter uma largura de 320px*/
+.container__pesquisa:hover > .barra__pesquisa{
+    width: 320px;
+    padding-left: 20px;
+}
+
+
+.container__pesquisa:hover > .botao__pesquisa{
+    background: var(--branco);
+}
+
+.container__pesquisa:hover > .botao__pesquisa .lupa__branca{
+    display: none;
+}
+
+.container__pesquisa:hover > .botao__pesquisa .lupa__roxa{
+    display: block;
+}
+
+/*estiliza o placeholder*/
+::-webkit-input-placeholder{
+    font-size: 17px;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-destaque);
+
+}
+
+
+/*----------------------------CONTEUDO HOMEPAGE--------------------------------*/
+
+.divisoria{
+    border: var(--cor-divisoria)1px solid;
+}
+
+.conteudo__homepage{
+    margin-top: 5rem;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/stylees.css">
+    <title>BananaPoint | Home </title>
+</head>
+<body>
+    <header class="homepage__banners">
+        
+        <!-- Slideshow com Radio Buttons (SÓ CSS!) -->
+        <div class="slideshow-container">
+            
+            <!-- Radio Buttons (invisíveis, mas funcionam) -->
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
+            
+            <!-- As 5 Imagens do Slideshow -->
+            <div class="slide1" id="slide-content-1" style="background-image: url('../img/banner-chainsaw-man.png')">
+                <img src="../img/logo-chainsaw-man.png" alt="" class="logo__banners">
+            </div>
+            <div class="slide2" id="slide-content-2" style="background-image: url('../img/banner-dandadan.png')">
+                <img src="../img/logo-dandadan.png" alt="" class="logo__banners">
+            </div>
+            <div class="slide3" id="slide-content-3" style="background-image: url('../img/banner-jujutsu.png')">
+                <img src="../img/logo-jujutsu.png" alt="" class="logo__banners">
+            </div>
+            <div class="slide4" id="slide-content-4" style="background-image: url('../img/banner-mob-psycho-100.png')">
+                <img src="../img/logo-mob-psycho.png" alt="" class="logo__banners">
+            </div>
+            <div class="slide5" id="slide-content-5" style="background-image: url('../img/banner-solo-leveling.png')">
+                <img src="../img/logo-solo-leveling.png" alt="" class="logo__banners">
+            </div>
+            
+            <!-- Botões para navegar entre slides -->
+            <div class="slide-controls">
+                <label for="slide1" class="control-btn"></label>
+                <label for="slide2" class="control-btn"></label>
+                <label for="slide3" class="control-btn"></label>
+                <label for="slide4" class="control-btn"></label>
+                <label for="slide5" class="control-btn"></label>
+            </div>
+        </div>
+
+        <!-- Logo do site fica por cima -->
+        <nav class="nav__cabecalho">
+            <a href="./indeex.html" class="logo__cabecalho"><img src="../public/img/bananapoint-logo.png" alt="" width="200rem"></a>
+        </nav>
+    
+</body>
+</html>

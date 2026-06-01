@@ -1,0 +1,145 @@
+:root{
+ 
+    --cor-primaria: #7456CE;
+    --cor-secundaria: #3e306b;
+    --cor-destaque: #8D7ABE;
+    --branco: #D9DCFF;
+    --cor-divisoria: #72669A;
+    --cor-fundo: #0e0e0e;
+    --cor-hover: #9999b8;
+    --cor-menu: #130b16;
+    --preto: #121212;
+    --cinza: #6C6A6A;
+
+
+    --fonte-primaria: "poppins", sans-serif;
+
+    
+}
+
+.container__carrossel{
+    display: flex;
+    
+    
+    
+}
+
+.titulo__carrossel{
+    padding: 5px 7rem;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--branco);
+
+
+}
+
+.titulo__conteudo{
+    background-color: #0a0a0a;
+    padding: 0px 20px 0px 20px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    text-decoration: none;
+    color: #C3C3CC;
+    
+} 
+
+.info__carrossel-1, .info__carrossel-2, .info__carrossel-3{
+    
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 20px;
+}
+.info__carrossel-1{
+    margin-right: 60px;
+}
+.info__carrossel-2{
+    margin-right: 60px;
+}
+.info__carrossel-3{
+    margin-right: 60px;
+}
+
+
+.tags__1{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    gap: 5px;
+    color: #7E809C;
+    
+}
+
+.tags__2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7E809C;
+    background-color: #23212b;
+    
+    border-radius: 10px;
+    
+}
+
+.classificacao{
+    border-radius: 10px;
+}
+
+.capas__manga{
+    display: flex;
+    align-items: center;
+}
+
+.capas__manga img{
+    border-radius: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, margin 0.3s ease;
+    cursor: pointer;
+    position: relative; /*necessario para o z-index funcionar no hover*/
+}
+
+.volume-2, .volume-3{
+    
+    margin-left: -100px;
+}
+.volume-2{
+    z-index: 1;
+    
+    
+}
+.volume-3{
+    z-index: 0;
+}
+
+.volume-1{
+    z-index: 2;
+}
+
+.volume-1:hover{
+    transform: scale(105%);
+}
+
+.volume-2:hover{
+    margin-left: -60px;
+    margin-right: -40px;
+}
+.volume-3:hover{
+    margin-left: -50px;
+    margin-right: -50px; /*IMPORTANTE: esse margin-right faz com que esse conteudo (volume__3) NÃO empurre os outros conteúdos*/
+
+}
+
+.btn-carrossel{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.anime-img{
+    border-radius: 50px;
+}

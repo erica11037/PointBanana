@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root{
+
+    --cor-primaria: #7456CE;
+    --cor-secundaria: #3e306b;
+    --cor-destaque: #8D7ABE;
+    --branco: #D9DCFF;
+    --cor-divisoria: #72669A;
+    --cor-fundo: #121212;
+    --cor-hover: #9999b8;
+
+    --fonte-primaria: "poppins", sans-serif;
+    
+    
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--branco);
+    font-family: var(--fonte-primaria);
+}
+
+
+.homepage__banners{
+    padding-inline: 16px;
+    position: relative;
+    width: 100%;
+    height: 50rem;
+    background: url('../img/banner-chainsaw-man.png') no-repeat center center/cover;
+    background-position: center 38%;
+    /* o no-repeat center faz com que a imagem não se repita e fique centralizada */
+}
+
+
+.homepage__banners::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, transparent, rgba(18, 18, 18, 0.8), rgb(18, 18, 18));
+    bottom: 0;
+    z-index: 1;
+}
+
+.cabecalho__conteudo{
+    padding: 25px 0px 25px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.categorias__links{
+    text-decoration: none;
+    
+}
+
+
+.links__nav{
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    align-items: center;
+    
+}
+
+.nav-list a{
+    font-size: 1.4rem;
+    color: var(--branco);
+    padding-block: 16px;
+
+    /*o padding-block é o mesmo que padding-top e padding-bottom, ou seja, ele aplica um espaçamento tanto no topo quanto na parte inferior do elemento*/
+}
+
+.divisoria{
+    border: 1px solid var(--cor-destaque);
+}
+
+.container__icones{
+    padding: 0px 20px 0px 0px;
+    display: flex;
+    gap: 30px;
+}
+
+.container__pesquisa{
+    position: relative;
+    background-color: var(--cor-secundaria);
+    align-items: center;
+    display: flex;
+    border-radius: 40px;
+    outline: none;
+    color: var(--branco);
+    justify-content: space-between;
+    padding: 10px;
+}
+.barra__pesquisa{
+    background: none;
+    border: none;
+    outline: none;
+    color: var(b);
+    font-size: 16px;
+    width: 0;
+    padding: 0;
+    transition: 0.4s;
+}
+
+.botao__pesquisa{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lupa__branca{
+    display: none;
+}
+
+.container__pesquisa:hover > .barra__pesquisa{
+    /* quando essa div receber um hover (quando a gnt passar o mouse em cima) a nossa barra de pesquisa vai receber uma "estilizacao" q no caso aparece sendo o width de 320px*/
+    width: 320px;
+    padding-left: 20px;
+}
+
+
+.container__pesquisa:hover > .botao__pesquisa{
+    background-color: var(--cor-primaria);
+}
+
+
+.container__pesquisa:hover > .botao__pesquisa > .lupa__roxa{
+    display: none;
+}
+
+.container__pesquisa:hover > .botao__pesquisa > .lupa__branca{
+    display: block;
+}
+
+::-webkit-input-placeholder{
+    font-size: 17px;
+    color: var(--cor-destaque);
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>BananaPoint | Home </title>
+</head>
+<body>
+    
+    <nav class="nav__cabecalho">
+        <a href="./index.html" class="logo__cabecalho"><img src="./img/bananapoint-logo.png" alt="" width="200rem"></a>
+        <ul class="menu__cabecalho">
+            <li class="links__cabecalho"><a href="#">Animes</a></li>
+            <li class="links__cabecalho"><a href="#">Mangás</a></li>
+            <li class="links__cabecalho"><a href="#">Catálogo</a></li>
+        </ul>
+    </nav>
+    <main>
+    <header class="homepage__banners">
+        
+        
+        <div class="slideshow__container">
+            
+            
+            <input type="radio" name="slide" id="slide1" checked>
+            <!-- O "checked" é o que faz o primeiro slide aparecer por padrão. Ele indica que esse input está selecionado, e como os outros inputs estão ligados a ele, o CSS vai mostrar o conteúdo do slide1. -->
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
+            
+            
+            <div class="banner1" id="conteudo__slide1">
+                <div class="imagem__banner" style="background-image: url('./img/banner-chainsaw-man.png')"></div>
+                <img src="./img/logo-chainsaw-man.png" alt="" class="logo__banners">
+                
+            </div>
+            <div class="banner2" id="conteudo__slide2">
+                <div class="imagem__banner" style="background-image: url('./img/banner-dandadan.png')"></div>
+                <img src="./img/logo-dandadan.png" alt="" class="logo__banners">
+            </div>
+            <div class="banner3" id="conteudo__slide3">
+                <div class="imagem__banner" style="background-image: url('./img/banner-jujutsu.png')"></div>
+                <img src="./img/logo-jujutsu.png" alt="" class="logo__banners">
+            </div>
+            <div class="banner4" id="conteudo__slide4">
+                <div class="imagem__banner" style="background-image: url('./img/banner-mob-psycho-100.png')"></div>
+                <img src="./img/logo-mob-psycho.png" alt="" class="logo__banners">
+            </div>
+            <div class="banner5" id="conteudo__slide5" tyle="background-image: url('./img/banner-solo-leveling.png')">
+                <div class="imagem__banner" style="background-image: url('./img/banner-solo-leveling.png')"></div>
+                <img src="./img/logo-solo-leveling.png" alt="" class="logo__banners">
+            </div>
+            
+            <div class="banners__controles">
+                <label for="slide1" class="botoes__slides"></label>
+                <label for="slide2" class="botoes__slides"></label>
+                <label for="slide3" class="botoes__slides"></label>
+                <label for="slide4" class="botoes__slides"></label>
+                <label for="slide5" class="botoes__slides"></label>
+            </div>
+        </div>
+
+        </main>
+    
+</body>
+</html>

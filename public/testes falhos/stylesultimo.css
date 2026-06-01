@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root{
+
+    --cor-primaria: #7456CE;
+    --cor-secundaria: #3e306b;
+    --cor-destaque: #8D7ABE;
+    --branco: #D9DCFF;
+    --cor-divisoria: #72669A;
+    --cor-fundo: #121212;
+    --cor-hover: #9999b8;
+
+    --fonte-primaria: "poppins", sans-serif;
+    
+    
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--branco);
+    font-family: var(--fonte-primaria);
+}
+
+
+
+/* ============================================ */
+/* BANNERS (ARRUMAR DPS PQ N CONSIGO PASSAR OS OUTROS BANNERS KKKKKKKKKKK */
+
+
+
+/*o container principal ".conteudo", seria o elemento pai, aonde os slide1, e slide serão exibido, ou seja, elementos filhos*/
+.conteudo{
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+.conteudo img{
+    width: 100%;
+    height: 100%;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-position: center 30%;
+    object-fit: cover;
+}
+
+
+.navegacao{
+    
+    position: absolute;
+    bottom: 2rem;
+    left: 15%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+/*Utilizando o ".navegacao", e colocando o atributo position: absolute, fará com que as dimensões inseridas possam ser movidas apenas dentro do elemento pai (.conteudo)*/
+
+
+.botao__navegacao{
+    
+    width: 2rem;
+    height: 1rem;
+    border-radius: 2rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    background-color: var(--cor-secundaria);
+    transition: 0.3s ease-in-out;
+}
+
+.botao__navegacao:hover{
+    background-color: var(--cor-hover);
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+/*O display: none faz com que o conteudo desapareça*/
+
+/*O display: block é utilizado para exibir elementos que estavam escondidos*/
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+
+.slide{
+    width: 20%;
+    /*O width: 20% é utilizado para que cada slide ocupe 20% da largura total, ou seja, 100% dividido por 5 slides = 20% para cada slide*/
+    transition: 0.5s;
+}
+
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+/*O ".slide" esta selecionando uma classe, já o "#slide1", está selecionando o elemento com o ID "slide1"*/
+
+
+/*O checked serve para saber se está selecionado ou não, se estiver, vai adicionar o estilo que queremos colocar*/
+
+/*o ~ funciona como um 'quero' se o id (#slide) estiver checado (:checked) quero que o s1 (a div da primeira imagem) tenha uma margin-left de 0 */
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-right: -100%
+}
+
+
+#slide3:checked ~ .s1{
+    margin-left:-200%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left:-300%;
+}
+
+#slide5:checked ~ .s1{
+    margin-left:-400%;
+}
+
+/* ============================================ */

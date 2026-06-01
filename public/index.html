@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/slide.css">
+    <link rel="stylesheet" href="./assets/carrossel.css">
+    <link rel="shortcut icon" href="banana.ico" type="image/x-icon">
+    <script src="/public/script.js" defer></script>
+
+    <title>BananaPoint | Home</title>
+</head>
+<body>
+    <!--cabecalho, talvez para todas as paginas?-->
+    <div class="navegacao__container">
+        <div class="logo__homepage">
+            <a href="index.html"><img src="./img/bananapoint-logo.png" alt="Logo BananaPoint"></a>
+        </div>
+        <ul class="categorias__cabecalho"> 
+            <li class="listas__categorias"><a class="links__categorias" href="#">Animes</a></li>
+            <li class="listas__categorias"><a class="links__categorias" href="#">Filmes</a></li>
+            <li class="listas__categorias"><a class="links__categorias" href="#">Mangás</a></li>
+            <li class="listas__categorias"><a class="links__categorias" href="#">Categorias ⌵</a></li>
+        </ul>
+        <div class="container__pesquisa">
+            <input type="text" class="barra__pesquisa" placeholder="Pesquisar...">
+            <a class="botao__pesquisa">
+                <img src="./img/icones/icones-lupa-roxa.png" alt="lupa roxa" class="lupa__roxa" width="20px" height="20px">
+                <img src="./img/icones/icones-lupa-branca.png" alt="lupa branca" class="lupa__branca" width="20px" height="20px">
+            </a>
+        </div>
+        <div class="perfil__links">
+            
+            <a href="#"><img src="./img/icones/icones-favoritos.png" alt="Icone favoritos"></a>
+            <a href="#"><img src="./img/icones/icones-perfil.png" alt="Icone Perfil"></a>
+        </div>
+    </div>
+
+    <!--Slideshow da homepage-->
+    <section class="slider">
+        <div class="slider__conteudo">
+        <input type="radio" name="botao__radio" id="radio1" checked>
+        <input type="radio" name="botao__radio" id="radio2">
+        <input type="radio" name="botao__radio" id="radio3">
+        <input type="radio" name="botao__radio" id="radio4">
+        <input type="radio" name="botao__radio" id="radio5">
+        <!-- SLIDE 1 -->
+        <div class="slide__container primeiro" style="background-image: url('./img/banners/banner-chainsaw-man.png')">
+            <div class="slide__info">
+                <img src="./img/logos/logo-chainsaw-man.png" alt="chainsaw man logo" class="logo__banners">
+                <div class="avaliacao">
+                    <p class="avaliacao__banner"><img src="./img/icones/icones-estrela.png" alt="Avaliação" class="avaliacao-img__banner"> 8.3/10</p>
+                    <p class="info__banner"> 1h 40 min • 2025</p>
+                </div>
+                <div class="categorias__banners">
+                    <ul class="lista-categorias__banners">
+                        <li class="btn-categorias__banners"><a href="#drama">Drama</a></li>
+                        <li class="btn-categorias__banners"><a href="#shounen">Shounen</a></li>
+                        <li class="btn-categorias__banners"><a href="#acao">Ação</a></li>
+                    </ul>
+                </div>
+                <p class="descricao__banner">Envolvido em uma guerra de demônios e caçadores, Denji acaba conhecendo Reze, uma menina misteriosa.</p>
+                <div class="botoes__banner">
+                    <a href="#paginaanime" class="btn__assistir"><img src="./img/icones/icones-play.png" alt="">ASSISTA AGORA</a>
+                    <a href="#saibamais" class="btn__info"><img src="./img/icones/icones-info-preto.png" alt="Saber Mais">SAIBA MAIS</a>
+                </div>
+            </div>
+        </div>
+        <!-- SLIDE 2 -->
+        <div class="slide__container" style="background-image: url('./img/banners/banner-demon-slayer.png')">
+            <div class="slide__info">
+                <img src="./img/logos/logo-demon-slayer.png" alt="demon slayer logo" class="logo__banners__demon">
+                <div class="avaliacao">
+                    <p class="avaliacao__banner"><img src="./img/icones/icones-estrela.png" alt="Avaliação" class="avaliacao-img__banner"> 8.6/10</p>
+                    <p class="info__banner"> 5 temporadas • 2024</p>
+                </div>
+                <div class="categorias__banners">
+                    <ul class="lista-categorias__banners">
+                        <li class="btn-categorias__banners"><a href="#shounen">Shounen</a></li>
+                        <li class="btn-categorias__banners"><a href="#acao">Ação</a></li>
+                        <li class="btn-categorias__banners"><a href="#fantasia">Fantasia</a></li>
+                    </ul>
+                </div>
+                <p class="descricao__banner">Demônios massacraram sua família e amaldiçoaram sua irmã. Agora Tanjiro inicia sua jornada para encontrar a cura e se vingar.</p>
+                <div class="botoes__banner">
+                    <a href="#paginaanime" class="btn__assistir"><img src="./img/icones/icones-play.png" alt="">ASSISTA AGORA</a>
+                    <a href="#saibamais" class="btn__info"><img src="./img/icones/icones-info-preto.png" alt="Saber Mais">SAIBA MAIS</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SLIDE 3 -->
+        <div class="slide__container" style="background-image: url('./img/banners/banner-jujutsu.png')">
+            <div class="slide__info">
+                <img src="./img/logos/logo-jujutsu.png" alt="logo jujutsu kaisen" class="logo__banners">
+                <div class="avaliacao">
+                    <p class="avaliacao__banner"><img src="./img/icones/icones-estrela.png" alt="Avaliação" class="avaliacao-img__banner"> 8.5/10</p>
+                    <p class="info__banner"> 3 temporadas • 2026</p>
+                </div>
+                <div class="categorias__banners">
+                    <ul class="lista-categorias__banners">
+                        <li class="btn-categorias__banners"><a href="#acao">Ação</a></li>
+                        <li class="btn-categorias__banners"><a href="#shounen">Shounen</a></li>
+                        <li class="btn-categorias__banners"><a href="#fantasia">Fantasia</a></li>
+                        <li class="btn-categorias__banners"><a href="#sobrenatural">Sobrenatural</a></li>
+                        <li class="btn-categorias__banners"><a href="#drama">Drama</a></li>
+                    </ul>
+                </div>
+                <p class="descricao__banner">Yuji engole um dedo amaldiçoado para salvar um amigo e passa a dividir o corpo com Sukuna.</p>
+                <div class="botoes__banner">
+                    <a href="#paginaanime" class="btn__assistir"><img src="./img/icones/icones-play.png" alt="">ASSISTA AGORA</a>
+                    <a href="#saibamais" class="btn__info"><img src="./img/icones/icones-info-preto.png" alt="Saber Mais">SAIBA MAIS</a>
+                </div>
+            </div>
+        </div>
+        <!-- SLIDE 4 -->
+        <div class="slide__container" style="background-image: url('./img/banners/banner-mob-psycho-100.png')">
+            <div class="slide__info">
+                <img src="./img/logos/logo-mob-psycho.png" alt="logo mob psycho 100" class="logo__banners">
+                <div class="avaliacao">
+                    <p class="avaliacao__banner"><img src="./img/icones/icones-estrela.png" alt="Avaliação" class="avaliacao-img__banner"> 8.5/10</p>
+                    <p class="info__banner"> 3 temporadas • 2022</p>
+                </div>
+                <div class="categorias__banners">
+                    <ul class="lista-categorias__banners">
+                        <li class="btn-categorias__banners"><a href="#acao">Ação</a></li>
+                        <li class="btn-categorias__banners"><a href="#comedia">Comédia</a></li>
+                        <li class="btn-categorias__banners"><a href="#fantasia">Fantasia</a></li>
+                        <li class="btn-categorias__banners"><a href="#sobrenatural">Sobrenatural</a></li>
+                    </ul>
+                </div>
+                <p class="descricao__banner">Shigeo pode até parecer bem normalzinho, mas na verdade esconde poderes psíquicos incríveis que acabam aparecendo quando ele perder o controle das próprias emoções.</p>
+                <div class="botoes__banner">
+                    <a href="#paginaanime" class="btn__assistir"><img src="./img/icones/icones-play.png" alt="">ASSISTA AGORA</a>
+                    <a href="#saibamais" class="btn__info"><img src="./img/icones/icones-info-preto.png" alt="Saber Mais">SAIBA MAIS</a>
+                </div>
+            </div>
+        </div>
+        <!-- SLIDE 5 -->
+        <div class="slide__container" style="background-image: url('./img/banners/banner-cowboy-bebop.png')">
+            <div class="slide__info">
+                <img src="./img/logos/logo-cowbow-bebop.png" alt="logo cowboy bebop" class="logo__banners__cowboy">
+                <div class="avaliacao">
+                    <p class="avaliacao__banner"><img src="./img/icones/icones-estrela.png" alt="Avaliação" class="avaliacao-img__banner"> 8.9/10</p>
+                    <p class="info__banner"> 26 episódios • 1998</p>
+                </div>
+                <div class="categorias__banners">
+                    <ul class="lista-categorias__banners">
+                        <li class="btn-categorias__banners"><a href="#acao">Ação</a></li>
+                        <li class="btn-categorias__banners"><a href="#drama">Drama</a></li>
+                        <li class="btn-categorias__banners"><a href="#ficcao-cientifica">Ficção Científica</a></li>
+                    </ul>
+                </div>
+                <p class="descricao__banner">Uma equipe incomum de caçadores de recompensas tenta ganhar a vida viajando pelo espaço.</p>
+                <div class="botoes__banner">
+                    <a href="#paginaanime" class="btn__assistir"><img src="./img/icones/icones-play.png" alt="">ASSISTA AGORA</a>
+                    <a href="#saibamais" class="btn__info"><img src="./img/icones/icones-info-preto.png" alt="Saber Mais">SAIBA MAIS</a>
+                </div>
+            </div>
+        </div>
+            <!-- Navegações automaticas e manuais, >>sempre<< tenho que manter abaixo dos containers dos slides -->
+        <div class="nav__auto">
+            <div class="auto__btn1"></div>
+            <div class="auto__btn2"></div>
+            <div class="auto__btn3"></div>
+            <div class="auto__btn4"></div>
+            <div class="auto__btn5"></div>
+        </div>
+        <div class="nav__manual">
+            <label for="radio1" class="manual__btn"></label>
+            <label for="radio2" class="manual__btn"></label>
+            <label for="radio3" class="manual__btn"></label>
+            <label for="radio4" class="manual__btn"></label>
+            <label for="radio5" class="manual__btn"></label>
+        </div>
+    </div>
+    </section>
+
+    <main class="conteudo__homepage">
+        <h1 class="titulo__carrossel">POPULARES ❯</h1>
+
+        <div class="container__carrossel">
+            <button class="btn-carrossel"><img src="./img/icones/icones-previous.png" alt="" width="60px"></button>
+            <div class="capa__anime">
+                <a href="#"><img src="./img/capas/capas-animes/capa-anime-chainsaw-man.png" width="220rem" alt="Chainsaw man" class="anime-img"></a>
+            </div>
+            <div class="info__carrossel-1">
+                <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
+
+                <div class="tags__1">
+                    <img src="./img/classificacao/classificacao-18.png" alt="Classificação de 18 anos" width="35px" class="classificacao">
+                    <p>Leg | Dub</p>
+                    <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
+                </div>
+                <p class="tags__2">Anime | Manga</p>
+                <div class="capas__manga">
+                    <a href="#"><img src="./img/capas/capas-manga/chainsaw-man-vol-1.png" alt="Volume 1 Chainsaw man" width="130px" class="volume-1"></a>
+                    <a href="#"><img src="./img/capas/capas-manga/chainsaw-man-vol-2.png" alt="Volume 2 Chainsaw man" width="130px" class="volume-2"></a>
+                    <a href="#"><img src="./img/capas/capas-manga/chainsaw-man-vol-3.png" alt="Volume 3 Chainsaw man" width="130px" class="volume-3"></a>
+                </div>
+            </div>
+
+        <!-- Item 2 - carrossel -->
+        
+
+            <a href="#"><img src="./img/capas/capas-animes/capa-anime-soul-eater.png" width="220rem" alt="Soul Eater" class="anime-img"></a>
+            <div class="info__carrossel-2">
+               <a href="#" class="titulo__conteudo">Soul Eater</a>
+                <div class="tags__1">
+                    <img src="./img/classificacao/classificacao-14.png" alt="Classificação de 14 anos" width="35px" class="classificacao">
+                    <p>Leg | Dub </p>
+                    <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
+                </div>
+                <p class="tags__2">Anime | Manga</p>
+                <div class="capas__manga">
+                    <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-1.png" alt="Soul Eater Volume 1" width="130px" height="190px" class="volume-1"></a>
+                    <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-2.png" alt="Soul Eater Volume 3" width="130px" height="190px"class="volume-2"></a>
+                    <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-3.png" alt="Soul Eater Volume 3" width="130px" height="190px"class="volume-3"></a>
+                </div>
+            </div>
+            <!-- Item 3 - carrossel -->
+
+            <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="240rem" alt="Jujutsu Kaisen" class="anime-img"></a>
+            <div class="info__carrossel-3">
+                <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
+                <div class="tags__1">
+                    <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
+                    <p>Leg | Dub</p>
+                    <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
+                </div>
+                <p class="tags__2">Anime | Manga</p>
+
+                <div class="capas__manga">
+                    <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="150px" class="volume-1"></a>
+
+                    <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="150px" class="volume-2"></a>
+
+                    <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="150px" class="volume-3"></a>
+                </div>
+            </div>
+
+            
+            <button class="btn-carrossel"><img src="./img/icones/icones-next.png" alt="" width="60px"></button>
+        </div>
+
+    </main>
+
+    
+</body>
+</html>
