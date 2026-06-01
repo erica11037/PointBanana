@@ -13,7 +13,7 @@ function proximaImg() {
     document.getElementById('radio' + cont).checked = true;
 }
 
-// isso aqui atualiza o contador se você clicar nas bolinhas manualmente
+// atualiza o contador se você clicar nas bolinhas manualmente!!
 document.querySelectorAll('input[name="botao__radio"]').forEach((elem, index) => {
     elem.addEventListener("change", function() {
         cont = index + 1;
@@ -21,7 +21,4 @@ document.querySelectorAll('input[name="botao__radio"]').forEach((elem, index) =>
 });
 
 //LEMBRETE: estudar dps para conseguir compreender melhor o código
-
-
-//-------------------FAVORITAR ITEM
 

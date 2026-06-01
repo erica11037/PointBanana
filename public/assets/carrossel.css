@@ -8,7 +8,7 @@
     --cor-fundo: #0e0e0e;
     --cor-hover: #9999b8;
     --cor-menu: #130b16;
-    --preto: #121212;
+    --preto: #0f0f0f62;
     --cinza: #6C6A6A;
 
 
@@ -17,11 +17,18 @@
     
 }
 
+
+
 .container__carrossel{
+    overflow-x: hidden;
     display: flex;
-    
-    
-    
+}
+.item__carrossel{
+    display: flex;
+    background-color: var(--preto);
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
 }
 
 .titulo__carrossel{
@@ -134,10 +141,15 @@
 }
 
 .btn-carrossel{
-    background: transparent;
+    background: var(--cor-fundo);
+    height: 100%;
     border: none;
     cursor: pointer;
     padding: 1rem;
+    
+    justify-content: center;
+    
+
 }
 
 .anime-img{
