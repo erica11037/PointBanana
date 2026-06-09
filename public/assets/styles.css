@@ -15,10 +15,10 @@
     --branco: #D9DCFF;
     --cor-divisoria: #72669A;
     --cor-fundo: #0e0e0e;
-    --cor-hover: #9999b8;
+    --cor-hover: #9090b1;
     --cor-menu: #161317;
     --preto: #121212;
-    --cinza: #6C6A6A;
+    --cinza: #6b6b6b;
 
     --fonte-primaria: "poppins", sans-serif;
 
@@ -63,7 +63,7 @@ body{
 }
 .links__categorias{
     text-decoration: 0;
-    color: var(--cor-hover);
+    color: var(--cinza);
     transition: 0.4s;
 
 }
