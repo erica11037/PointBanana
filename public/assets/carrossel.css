@@ -175,15 +175,10 @@
 
 .container__carrossel {
     transition: 0.4s;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
     display: flex;
     gap: 10px;
     flex: 1;
-    /* Esconder scrollbar */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    
 }
 
 .container__carrossel::-webkit-scrollbar {
@@ -192,10 +187,9 @@
 
 .item__carrossel {
     scroll-snap-align: start;
-    flex-shrink: 0;
+    
 }
 
-/* Scroll automático para o slide selecionado */
 
 
 .carrossel-seta:hover {
