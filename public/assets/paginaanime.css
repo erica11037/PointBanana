@@ -1,3 +1,6 @@
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -12,11 +15,10 @@
     --branco: #D9DCFF;
     --cor-divisoria: #72669A;
     --cor-fundo: #0e0e0e;
-    --cor-hover: #9999b8;
-    --cor-menu: #130b16;
-    --preto: #0f0f0f62;
-    --cinza: #6C6A6A;
-
+    --cor-hover: #9090b1;
+    --cor-menu: #161317;
+    --preto: #121212;
+    --cinza: #6b6b6b;
 
     --fonte-primaria: "poppins", sans-serif;
 
@@ -75,4 +77,44 @@ body{
 
 .conteudo__homepage{
     margin-top: 5rem;
+}
+
+.banner_imagem{
+    position: absolute;
+}
+
+ .btn-categorias__banners{
+    transition: 0.5s ease;
+ }
+
+ .btn-categorias__banners a{
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--cor-hover);
+    background-color: #47394e46;
+    border-radius: 15rem;
+    padding: 5px 10px 5px 10px;
+    transition: 0.5s;
+ }
+
+ .btn-categorias__banners:hover{
+    transform: scale(110%);
+
+ }
+ .btn-categorias__banners a:hover{
+    background-color: #69557446;
+ }
+ .lista-categorias__banners{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    
+    
+ }
+
+.descricao-anime{
+    color: var(--branco);
+    position: absolute;
+    line-height: 1.6;
+    width: 30%
 }
