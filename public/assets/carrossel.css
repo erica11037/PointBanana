@@ -24,8 +24,10 @@
     font-size: 100px;
     transition: 0.2s;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .btn-rolagem{
+    transition: 0.4s;
     background-color: #463E5E;
     padding: 25px;
     border-radius: 10px;
@@ -33,15 +35,20 @@
     align-items: center;
     margin-right: 15px;
     height: 250px;
+    cursor: pointer;
     
     
 }
+
 
 .btn-rolagem:hover{
     transform: scale(105%);
     color: #3e306b
 }
-
+.animes__secao{
+    display: flex;
+    flex-direction: column;
+}
 .container__carrossel{
     overflow-x: auto;
     display: flex;
@@ -65,7 +72,7 @@
 .titulo__carrossel{
     padding-left: 30px;
     font-size: 30px;
-    margin-bottom: 20px;
+    
     color: var(--branco);
 
 
@@ -189,15 +196,6 @@
 
 /* =====CARROSSEL ===== */
 
-.carrossel-wrapper{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
 .container__carrossel {
     transition: 0.4s;
     display: flex;
@@ -213,3 +211,4 @@
     height: 350px;
     padding: 5px;
 }
+

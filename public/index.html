@@ -23,6 +23,14 @@
             <li class="listas__categorias"><a class="links__categorias" href="#">Mangás</a></li>
             <li class="listas__categorias"><a class="links__categorias" href="#">Categorias ⌵</a></li>
         </ul>
+        <div class="container__pesquisa">
+            <input type="text" class="barra__pesquisa" placeholder="Pesquisar...">
+            <a class="botao__pesquisa">
+                <img src="./img/icones/icones-lupa-roxa.png" alt="lupa roxa" class="lupa__roxa" width="20px" height="20px">
+                <img src="./img/icones/icones-lupa-branca.png" alt="lupa branca" class="lupa__branca" width="20px" height="20px">
+            </a>
+        </div>
+        
         
         <div class="perfil__links">
             
@@ -165,321 +173,135 @@
     </section>
 
     <main class="conteudo__homepage">
-        <div class="categorias-secao">
-            <h1 class="titulo__carrossel">POPULARES ❯</h1>
-            <div class="carrossel-conteudo">
+        <div class="animes__secao">
+            <div class="categorias-secao">
+                <h1 class="titulo__carrossel">POPULARES ❯</h1>
+                    <div class="container__carrossel" id="carrossel-populares">
+                        <div id="slide-populares-1" class="item__carrossel">
+                            <div class="btn-rolagem"><button class="btn-avancar">❮</button></div>
+                        <a href="./pagina.html"><img src="./img/capas/capas-animes/capa-anime-chainsaw-man.png" width="220rem" alt="Chainsaw man" class="anime-img"></a>
+                        <div class="info__carrossel-1">
+                            <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
+                            <div class="tags__1">
+                                <img src="./img/classificacao/classificacao-18.png" alt="Classificação de 18 anos" width="35px" class="classificacao">
+                                <p>Leg | Dub</p>
+                                <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
+                            </div>
+                            <p class="tags__2">Anime | Manga</p>
+                            <div class="capas__manga">
+                                <a href="#"><img src="./img/capas/capas-manga/chainsaw-man-vol-1.png" alt="Volume 1 Chainsaw man" width="130px" class="volume-1"></a>
+                                <a href="#"><img src="./img/capas/capas-manga/chainsaw-man-vol-2.png" alt="Volume 2 Chainsaw man" width="130px" class="volume-2"></a>
+                                <a href="#"><img src="./img/capas/capas-manga/chainsaw-man-vol-3.png" alt="Volume 3 Chainsaw man" width="130px" class="volume-3"></a>
+                            </div>
+                        </div>
             
-                <div class="container__carrossel" id="carrossel-populares">
-                    <div id="slide-populares-1" class="item__carrossel">
-                        <div class="btn-rolagem"><button class="btn-avancar">❮</button></div>
-                    <a href="./pagina.html"><img src="./img/capas/capas-animes/capa-anime-chainsaw-man.png" width="220rem" alt="Chainsaw man" class="anime-img"></a>
-                    <div class="info__carrossel-1">
-                        <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-18.png" alt="Classificação de 18 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub</p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
+                        <!-- Item 2 - carrossel -->
+                        <div id="slide-populares-2" class="item__carrossel">
+                        <a href="#"><img src="./img/capas/capas-animes/capa-anime-soul-eater.png" width="220rem" alt="Soul Eater" class="anime-img"></a>
+                        <div class="info__carrossel-2">
+                           <a href="#" class="titulo__conteudo">Soul Eater</a>
+                            <div class="tags__1">
+                                <img src="./img/classificacao/classificacao-14.png" alt="Classificação de 14 anos" width="35px" class="classificacao">
+                                <p>Leg | Dub </p>
+                                <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
+                            </div>
+                            <p class="tags__2">Anime | Manga</p>
+                            <div class="capas__manga">
+                                <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-1.png" alt="Soul Eater Volume 1" width="130px" height="190px" class="volume-1"></a>
+                                <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-2.png" alt="Soul Eater Volume 3" width="130px" height="190px"class="volume-2"></a>
+                                <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-3.png" alt="Soul Eater Volume 3" width="130px" height="190px"class="volume-3"></a>
+                            </div>
                         </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/chainsaw-man-vol-1.png" alt="Volume 1 Chainsaw man" width="130px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/chainsaw-man-vol-2.png" alt="Volume 2 Chainsaw man" width="130px" class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/chainsaw-man-vol-3.png" alt="Volume 3 Chainsaw man" width="130px" class="volume-3"></a>
+            
+                        <!-- Item 3 - carrossel -->
+                        <div id="slide-populares-3" class="item__carrossel">
+                        <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="220rem" alt="Jujutsu Kaisen" class="anime-img"></a>
+                        <div class="info__carrossel-3">
+                            <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
+                            <div class="tags__1">
+                                <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
+                                <p>Leg | Dub</p>
+                                <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
+                            </div>
+                            <p class="tags__2">Anime | Manga</p>
+                            <div class="capas__manga">
+                                <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="130px" class="volume-1"></a>
+                                <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="130px" class="volume-2"></a>
+                                <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="130px" class="volume-3"></a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                    <!-- Item 2 - carrossel -->
-                    <div id="slide-populares-2" class="item__carrossel">
-                    <a href="#"><img src="./img/capas/capas-animes/capa-anime-soul-eater.png" width="220rem" alt="Soul Eater" class="anime-img"></a>
-                    <div class="info__carrossel-2">
-                       <a href="#" class="titulo__conteudo">Soul Eater</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-14.png" alt="Classificação de 14 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub </p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-1.png" alt="Soul Eater Volume 1" width="130px" height="190px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-2.png" alt="Soul Eater Volume 3" width="130px" height="190px"class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-3.png" alt="Soul Eater Volume 3" width="130px" height="190px"class="volume-3"></a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- Item 3 - carrossel -->
-                    <div id="slide-populares-3" class="item__carrossel">
-                    <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="220rem" alt="Jujutsu Kaisen" class="anime-img"></a>
-                    <div class="info__carrossel-3">
-                        <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub</p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="130px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="130px" class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="130px" class="volume-3"></a>
+                        <div class="btn-rolagem">
+                            <button class="btn-avancar">❯</button>
                         </div>
                     </div>
-                </div>
-                    <!-- Item 4 - carrossel -->
-                    <div id="slide-populares-4" class="item__carrossel">
-                    <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="220rem" alt="Jujutsu Kaisen" class="anime-img"></a>
-                    <div class="info__carrossel-3">
-                        <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub</p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="130px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="130px" class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="130px" class="volume-3"></a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- Item 5 - carrossel -->
-                    <div id="slide-populares-5" class="item__carrossel">
-                    <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="220rem" alt="Jujutsu Kaisen" class="anime-img"></a>
-                    <div class="info__carrossel-3">
-                        <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub</p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="130px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="130px" class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="130px" class="volume-3"></a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- Item 6 - carrossel -->
-                    <div id="slide-populares-6" class="item__carrossel">
-                    <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="220rem" alt="Jujutsu Kaisen" class="anime-img"></a>
-                    <div class="info__carrossel-3">
-                        <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub</p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="130px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="130px" class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="130px" class="volume-3"></a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- Item 7 - carrossel -->
-                    <div id="slide-populares-7" class="item__carrossel">
-                    <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="220rem" alt="Jujutsu Kaisen" class="anime-img"></a>
-                    <div class="info__carrossel-3">
-                        <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub</p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="130px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="130px" class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="130px" class="volume-3"></a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- Item 8 - carrossel -->
-                    <div id="slide-populares-8" class="item__carrossel">
-                    <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="220rem" alt="Jujutsu Kaisen" class="anime-img"></a>
-                    <div class="info__carrossel-3">
-                        <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub</p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="130px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="130px" class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="130px" class="volume-3"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="btn-rolagem"><button class="btn-avancar">❯</button></div>
-                </div>
-
-                
             </div>
+            
+            
+            
         </div>
         
-        <div class="categorias-secao">
-            <h1 class="titulo__carrossel">NOVIDADES ❯</h1>
-            <div class="carrossel-conteudo">
-            
-                <div class="container__carrossel" id="carrossel-populares">
-                    <div id="slide-populares-1" class="item__carrossel">
-                        <div class="btn-rolagem"><button class="btn-avancar">❮</button></div>
-                    <a href="./pagina.html"><img src="./img/capas/capas-animes/capa-anime-the-apothecary-diaries" width="220rem" alt="Chainsaw man" class="anime-img"></a>
-                    <div class="info__carrossel-1">
-                        <a href="#" class="titulo__conteudo">Diários de Uma Apotecária</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-14.png" alt="Classificação de 14 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub</p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/diarios-de-uma-apotecária-vol1.png" alt="Volume 1 Chainsaw man" width="130px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/diarios-de-uma-apotecária-vol2.webp" alt="Volume 2 Chainsaw man" width="130px" class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/diarios-de-uma-apotecária-vol3.webp" alt="Volume 3 Chainsaw man" width="130px" class="volume-3"></a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- Item 2 - carrossel -->
-                    <div id="slide-populares-2" class="item__carrossel">
-                    <a href="#"><img src="./img/capas/capas-animes/capa-anime-soul-eater.png" width="220rem" alt="Soul Eater" class="anime-img"></a>
-                    <div class="info__carrossel-2">
-                       <a href="#" class="titulo__conteudo">Soul Eater</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-14.png" alt="Classificação de 14 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub </p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-1.png" alt="Soul Eater Volume 1" width="130px" height="190px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-2.png" alt="Soul Eater Volume 3" width="130px" height="190px"class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-3.png" alt="Soul Eater Volume 3" width="130px" height="190px"class="volume-3"></a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- Item 3 - carrossel -->
-                    <div id="slide-populares-3" class="item__carrossel">
-                    <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="220rem" alt="Jujutsu Kaisen" class="anime-img"></a>
-                    <div class="info__carrossel-3">
-                        <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub</p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="130px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="130px" class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="130px" class="volume-3"></a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- Item 4 - carrossel -->
-                    <div id="slide-populares-4" class="item__carrossel">
-                    <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="220rem" alt="Jujutsu Kaisen" class="anime-img"></a>
-                    <div class="info__carrossel-3">
-                        <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub</p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="130px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="130px" class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="130px" class="volume-3"></a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- Item 5 - carrossel -->
-                    <div id="slide-populares-5" class="item__carrossel">
-                    <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="220rem" alt="Jujutsu Kaisen" class="anime-img"></a>
-                    <div class="info__carrossel-3">
-                        <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub</p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="130px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="130px" class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="130px" class="volume-3"></a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- Item 6 - carrossel -->
-                    <div id="slide-populares-6" class="item__carrossel">
-                    <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="220rem" alt="Jujutsu Kaisen" class="anime-img"></a>
-                    <div class="info__carrossel-3">
-                        <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub</p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="130px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="130px" class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="130px" class="volume-3"></a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- Item 7 - carrossel -->
-                    <div id="slide-populares-7" class="item__carrossel">
-                    <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="220rem" alt="Jujutsu Kaisen" class="anime-img"></a>
-                    <div class="info__carrossel-3">
-                        <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub</p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="130px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="130px" class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="130px" class="volume-3"></a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- Item 8 - carrossel -->
-                    <div id="slide-populares-8" class="item__carrossel">
-                    <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="220rem" alt="Jujutsu Kaisen" class="anime-img"></a>
-                    <div class="info__carrossel-3">
-                        <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
-                        <div class="tags__1">
-                            <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
-                            <p>Leg | Dub</p>
-                            <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
-                        </div>
-                        <p class="tags__2">Anime | Manga</p>
-                        <div class="capas__manga">
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="130px" class="volume-1"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="130px" class="volume-2"></a>
-                            <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="130px" class="volume-3"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="btn-rolagem"><button class="btn-avancar">❯</button></div>
-                </div>
-
-                
-            </div>
-        </div>
-        
-
-
     </main>
+    <div class="categorias-secao">
+                <h1 class="titulo__carrossel">NOVIDADES ❯</h1>
+                    <div class="container__carrossel" id="carrossel-populares">
+                        <div id="slide-populares-1" class="item__carrossel">
+                            <div class="btn-rolagem"><button class="btn-avancar">❮</button></div>
+                        <a href="./pagina.html"><img src="./img/capas/capas-animes/capa-anime-the-apothecary-diaries" width="220rem" alt="Diários de uma apotecária" class="anime-img"></a>
+                        <div class="info__carrossel-1">
+                            <a href="#" class="titulo__conteudo">Diários de Uma Apotecária</a>
+                            <div class="tags__1">
+                                <img src="./img/classificacao/classificacao-14.png" alt="Classificação de 14 anos" width="35px" class="classificacao">
+                                <p>Leg | Dub</p>
+                                <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
+                            </div>
+                            <p class="tags__2">Anime | Manga</p>
+                            <div class="capas__manga">
+                                <a href="#"><img src="./img/capas/capas-manga/diarios-de-uma-apotecária-vol1.png" alt="Volume 1 Diarios de Uma Apotecária" width="130px" class="volume-1"></a>
+                                <a href="#"><img src="./img/capas/capas-manga/diarios-de-uma-apotecária-vol2.webp" alt="Volume 2 Diarios de Uma Apotecária" width="130px" class="volume-2"></a>
+                                <a href="#"><img src="./img/capas/capas-manga/diarios-de-uma-apotecária-vol3.webp" alt="Volume 3 Diarios de Uma Apotecária" width="130px" class="volume-3"></a>
+                            </div>
+                        </div>
+            
+                        <!-- Item 2 - carrossel -->
+                        <div id="slide-populares-2" class="item__carrossel">
+                        <a href="#"><img src="./img/capas/capas-animes/capa-anime-soul-eater.png" width="220rem" alt="Soul Eater" class="anime-img"></a>
+                        <div class="info__carrossel-2">
+                           <a href="#" class="titulo__conteudo">Soul Eater</a>
+                            <div class="tags__1">
+                                <img src="./img/classificacao/classificacao-14.png" alt="Classificação de 14 anos" width="35px" class="classificacao">
+                                <p>Leg | Dub </p>
+                                <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
+                            </div>
+                            <p class="tags__2">Anime | Manga</p>
+                            <div class="capas__manga">
+                                <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-1.png" alt="Soul Eater Volume 1" width="130px" height="190px" class="volume-1"></a>
+                                <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-2.png" alt="Soul Eater Volume 3" width="130px" height="190px"class="volume-2"></a>
+                                <a href="#"><img src="./img/capas/capas-manga/soul-eater-vol-3.png" alt="Soul Eater Volume 3" width="130px" height="190px"class="volume-3"></a>
+                            </div>
+                        </div>
+            
+                        <!-- Item 3 - carrossel -->
+                        <div id="slide-populares-3" class="item__carrossel">
+                        <a href="#"><img src="./img/capas/capas-animes/capa-anime-jujutsu-kaisen.png" width="220rem" alt="Jujutsu Kaisen" class="anime-img"></a>
+                        <div class="info__carrossel-3">
+                            <a href="#" class="titulo__conteudo">Jujutsu Kaisen</a>
+                            <div class="tags__1">
+                                <img src="./img/classificacao/classificacao-16.png" alt="Classificação de 16 anos" width="35px" class="classificacao">
+                                <p>Leg | Dub</p>
+                                <img src="./img/icones/icones-favorite-no-click.png" alt="Favoritar" width="35px" id="btn-favoritar" onclick="favoritado">
+                            </div>
+                            <p class="tags__2">Anime | Manga</p>
+                            <div class="capas__manga">
+                                <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-1.png" alt="Jujutsu Kaisen Volume 1" width="130px" class="volume-1"></a>
+                                <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-2.png" alt="Jujutsu Kaisen Volume 2" width="130px" class="volume-2"></a>
+                                <a href="#"><img src="./img/capas/capas-manga/jujutsu-kaisen-vol-3.png" alt="Jujutsu Kaisen Volume 3" width="130px" class="volume-3"></a>
+                            </div>
+                        </div>
+                        <div class="btn-rolagem">
+                            <button class="btn-avancar">❯</button>
+                        </div>
+                    </div>
+            </div>
 
     
 </body>

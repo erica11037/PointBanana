@@ -14,10 +14,8 @@
     --branco: #D9DCFF;
     --cor-divisoria: #72669A;
     --cor-fundo: #0e0e0e;
-    --cor-hover: #9999b8;
-    --cor-menu: #130b16;
-    --preto: #121212;
-    --cinza: #6C6A6A;
+    --cor-menu: #552168;
+    --cor-branco: #494263;
 
 
     --fonte-primaria: "poppins", sans-serif;
@@ -211,6 +209,7 @@
     gap: 0.5rem;
     width: 13rem;
     transition: 0.3s;
+    font-weight: bold;
 }
 
 .btn__assistir img{
@@ -235,13 +234,15 @@
 .btn__info:hover{
     transform: scale(110%);
     background-color: var(--branco);
+
+    
  }
 
  .btn__info{
-    background-color: var(--cor-hover);
+    background-color: var(--branco);
     border-radius: 40px;
     text-decoration: none;
-    color: var(--preto);
+    color: var(--cor-branco);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,6 +250,7 @@
     gap: 0.5rem;
     width: 13rem;
     transition: 0.3s;
+    font-weight: bold;
 
  }
 
