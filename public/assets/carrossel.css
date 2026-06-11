@@ -17,7 +17,30 @@
     
 }
 
+.btn-avancar{
+    color: #302B40;
+    background-color: transparent;
+    border: none;
+    font-size: 100px;
+    transition: 0.2s;
+    margin-bottom: 10px;
+}
+.btn-rolagem{
+    background-color: #463E5E;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    height: 250px;
+    
+    
+}
 
+.btn-rolagem:hover{
+    transform: scale(105%);
+    color: #3e306b
+}
 
 .container__carrossel{
     overflow-x: auto;
@@ -35,10 +58,12 @@
     padding: 10px;
     margin-right: 10px;
     border-radius: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .titulo__carrossel{
-    padding: 5px 7rem;
+    padding-left: 30px;
     font-size: 30px;
     margin-bottom: 20px;
     color: var(--branco);
